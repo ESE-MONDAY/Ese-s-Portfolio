@@ -30,9 +30,9 @@ export default function Home() {
       <AnimatedText text='Portfolio' className='md:w-[300px] text-[#ea4c89]  mx-auto text-4xl md:text-5xl text-center font-merriweather font-bold mt-8'/>
       <AnimatedText text='Coming Soon' className='md:w-[300px] text-[#ea4c89]  mx-auto text-4xl md:text-5xl text-center font-merriweather font-bold mt-2'/>
           <div className='max-w-[600px] mx-auto mt-12'>
-          <p  className='text-center  font-semibold'>Hello, I&apos;m Ese Monday, a software developer from Lagos, Nigeria.<br /> I am currently revamping my portfolio. My interest lately have been centered around  open-source technology and privacy compliance, with a focus on user data protection and consent. <br/> I&apos;m also an avid reader who maintains a collection of knowledge in both published and unpublished notes, which you can explore <Link className='font-semibold underline text-[#ea4c89]' href="https://www.notion.so/esemonday/40d48ef6d29f4ff1af2241d4066fe0c8?v=ec4d5a36c67248918e395bee981e2a7a&p=3cf0bdc7281b4dca847041f35b7b421e&pm=s"> here</Link></p>
-            <p>Connect with me 👇</p>
-          <div className='text-black flex gap-4 mt-4 justify-center p-2'>
+          <p  className='text-center  font-semibold'>Hello, I&apos;m Ese Monday, a software developer from Lagos, Nigeria.<br /> I am currently revamping my portfolio but you send an email <Link href="mailto:mondayese8@gmail.com" className='underline '>📧</Link>    <br /> My interest lately has been centered around  open-source technology and privacy compliance, with a focus on user data protection and consent. <br/> I am also an avid reader who maintains a collection of knowledge in both published and unpublished notes, which you can explore <Link className='font-semibold underline text-[#ea4c89]' href="https://www.notion.so/esemonday/40d48ef6d29f4ff1af2241d4066fe0c8?v=ec4d5a36c67248918e395bee981e2a7a&p=3cf0bdc7281b4dca847041f35b7b421e&pm=s"> here</Link></p>
+            <p className='text-center mt-4  font-semibold text-sm'>Send a message 👇</p>
+          <div className='text-black flex gap-4 mt-1 justify-center p-2'>
             <Link className='hover:text-[#ea4c89]' href="https://www.linkedin.com/in/ese-monday/" ><BsLinkedin size={16} /></Link> 
             <Link className='hover:text-[#ea4c89]' href="https://github.com/ESE-MONDAY"><BsGithub size={16} /></Link>
             <Link className='hover:text-[#ea4c89]' href="https://twitter.com/EseMonday1"><BsTwitter size={16}/></Link>
