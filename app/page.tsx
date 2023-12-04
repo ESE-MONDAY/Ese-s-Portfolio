@@ -172,7 +172,7 @@ export default function Home() {
           </div>
           
            </div>
-        <div className=' col-span-5 md:col-span-3 h-screen md:overflow-y-auto '>
+        <div className=' col-span-5 md:col-span-3 h-full md:overflow-y-auto '>
 
           <div className='mt-40 md:px-16 p-2 '>
           <p className='text-sm md:text-lg text-violet-red-800 font-merriweather font-semibold text-left '>About Me</p>
