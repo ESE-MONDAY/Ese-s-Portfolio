@@ -1,41 +1,42 @@
-// components/Loading.tsx
-import { motion, useAnimation } from 'framer-motion';
-import { useEffect } from 'react';
+import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import AnimatedText from './AnimatedText';
 
-const Loading = ({ progress }: { progress: number }) => {
-    const controls = useAnimation();
+const Preloader = ({ isVisible }: any) => {
+  const containerVariants = {
+    initial: { opacity: 0, y: -100 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.2, delayChildren: 0.3, staggerChildren: 0.2 } },
+    exit: { opacity: 0, y: -100, transition: { duration: 0.4, delay:0.2,  staggerChildren: 0.2, ease: 'easeInOut' } },
+  };
 
-    useEffect(() => {
-        controls.start({
-          opacity: 1,
-          scale: 1,
-          transition: { type: 'spring', damping: 15, stiffness: 150 },
-        });
-      }, [controls]);
+  const childVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.2, ease: 'easeInOut' } },
+  };
+ 
   return (
-    <div className="fixed top-0 left-0 w-full h-full  bg-gray-900">
-        <div className='w-full flex gap-2 fixed bottom-0 py-8 '>
-
+    <AnimatePresence mode='wait'>
+      {isVisible && (
         <motion.div
-        className=" "
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        style={{ width: `${progress}%` }}
-        exit={{ opacity: 0, scale: 0.5 }}
-      >
-      
-        <div className="h-8 bg-[#fce7f1] mt-2">
-          <motion.div
-            className="h-full bg-[#ea4c89]"
-            style={{ width: `${progress}%` }}
-          />
-        </div>
-      </motion.div>
-      <div className="text-center text-white flex items-center">{progress}%</div>
-        </div>
-      
-    </div>
+          key='preloader'
+          className='h-screen fixed top-0 w-screen flex justify-center flex-col items-center bg-[#efefef] text-white'
+          variants={containerVariants}
+          initial='initial'
+          animate='animate'
+          exit='exit'
+        
+        >
+          <motion.h1 variants={childVariants} className='text-6xl font-roboto font-bold text-[#9b193f]'>
+          <AnimatedText text="Ese Monday" />
+          </motion.h1>
+          <motion.p variants={childVariants} className='text-4xl font-roboto font-medium text-[#9b193f] mt-2'>
+          <AnimatedText text="Frontend Engineer" />
+          </motion.p>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
-export default Loading;
+export default Preloader;
