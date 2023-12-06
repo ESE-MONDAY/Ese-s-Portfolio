@@ -20,7 +20,7 @@ const Preloader = ({ isVisible }: any) => {
       {isVisible && (
         <motion.div
           key='preloader'
-          className='h-screen fixed top-0 w-screen flex justify-center flex-col items-center bg-[#111111] text-white'
+          className='h-screen z-20 fixed top-0 w-screen flex justify-center flex-col items-center bg-[#111111] text-white'
           variants={containerVariants}
           initial='initial'
           animate='animate'
