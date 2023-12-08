@@ -35,9 +35,9 @@ const Home = () => {
        <div className='p-2 mt-20  text-white md:px-16 '>
        <h1 className='text-[45px] md:text-[90px] font-roboto font-bold lg:pl-40 '> Hey 👋🏾 <br />I&apos;m Ese</h1>
         
-        <p className='mt-2 text-2xl text-white/80 max-w-[600px]  lg:pl-52'> - a Frontend Engineer and Technical Writer with 3+ years of professional experience nudging early-stage brands and teams into greatness.</p>
+        <p className='mt-2 text-2xl text-white/80 max-w-[900px]  lg:pl-52'> - a Frontend Engineer and Technical Writer with 3+ years of professional experience nudging early-stage brands and teams into greatness.</p>
         <div className='w-full border-red-500 flex gap-1 mt-8 lg:pl-52 '>
-        <p className='px-2 py-1 rounded-full text-xs sm:text-sm border-[1px] bg-gray-500/20 border-[#ea4c89]/50 text-white/80'>Frontend Development</p>
+        <p className='px-2 py-1 rounded-full text-xs sm:text-sm border-[1px] bg-gray-500/20 border-[#ea4c89]/50 text-white/80'>Frontend Engineering</p>
            <p  className='px-2 py-1 rounded-full text-xs sm:text-sm border-[1px] bg-gray-500/20 border-[#ea4c89]/50 text-white/80'>Technical Writing</p>
            <p  className='px-2 py-1 rounded-full text-xs sm:text-sm  border-[1px] bg-gray-500/20 border-[#ea4c89]/50 text-white/80'>FOSS Advocate</p>
 
