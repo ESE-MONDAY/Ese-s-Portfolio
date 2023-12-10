@@ -8,6 +8,12 @@ module.exports = {
         protocol: 'https',
         hostname: 'cdn.sanity.io',
       },
+      {
+        protocol: 'https',
+        hostname: 'unsplash.com',
+        
+      }
+      
     ],
   },
 
