@@ -21,6 +21,7 @@
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.11.0",
+    "react-lottie": "^1.2.3",
     "sanity": "^3.19.2",
     "server-only": "^0.0.1",
     "styled-components": "^6.1.1",
