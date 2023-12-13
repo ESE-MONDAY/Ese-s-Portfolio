@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
-import Crying from '../public/Crying.json'
-import Lottie from 'react-lottie'
+import Crying from '../public/Crying.json';
+import Lottie from 'lottie-react';
  
 export default function NotFound() {
   return (
