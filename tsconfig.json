@@ -31,7 +31,7 @@
     "pages/**/*.ts",
     "pages/**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/not-found.jsx"  ],
   "exclude": [
     "node_modules"
   ]

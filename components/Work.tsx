@@ -10,7 +10,7 @@ const Work = () => {
             setIsOpen(!isOpen)
     }
   return (
-    <div className='my-40'>
+    <div id='triggerElement' className='my-40'>
          <div className=''>
                 <p className='text-2xl mt-8 text-white  font-semibold text-left '>Resume</p>
                 <div className='mt-12'>

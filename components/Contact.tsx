@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Contact = () => {
   return (
-    <div className='my-40'>
+    <div className='my-40' id='contact'>
         <h3 className='text-2xl mt-8 text-white  font-semibold '>Contact Me</h3>
         <div className='flex justify-between flex-col md:flex-row mt-8 md:items-center '>
             <p className=' text-xl text-white/80'>I&apos;m open to freelancing, technical writing and open-source projects.</p>

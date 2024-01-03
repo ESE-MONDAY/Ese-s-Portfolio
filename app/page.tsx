@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, {useEffect} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -11,6 +12,13 @@ import ArticlesPage from '../components/Articles'
 import Work from '../components/Work'
 import Aboutme from '../components/Aboutme'
 import Projects from '../components/Projects'
+import { Metadata } from 'next'
+import gsap from 'gsap'
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 
 
 const  Articles = [
@@ -42,35 +50,39 @@ const  Articles = [
 ]
 
 
+
+
 const Home = () => {
+ 
+  
   return (
-    <div className='h-auto flex justify-between flex-col bg-[#111111]  max-w-[1440px] w-full mx-auto  overflow-y-auto px-8 md:px-16'>
+    <div className='h-auto flex justify-between flex-col bg-[#111111]  w-full mx-auto  overflow-y-auto px-8 md:px-16'>
         <Head>
             <title>Ese Monday - Portfolio</title>
             <meta name="software developer" content="Ese Monday is a dynamic software developerbased in Lagos Nigeria" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
           <main className='h-auto w-full  '>
-                <div className='text-white/70 gap-4 md:gap-8 mt-8 flex  justify-end w-full'>
+                <nav className='text-white/70 gap-4 md:gap-8 mt-8 flex  justify-end w-full '>
               
-              <Link className='hover:text-[#ea4c89]' href="https://www.linkedin.com/in/ese-monday/" >
+              <Link className=' navigation' href="https://www.linkedin.com/in/ese-monday/" >
                 <BsLinkedin size={16} className='md:hidden flex' />
                 <p className='text-lg font-roboto font-medium hidden md:flex'>Linkedin</p>
                 
                 </Link> 
-              <Link className='hover:text-[#ea4c89]' href="https://github.com/ESE-MONDAY">
+              <Link className=' navigation' href="https://github.com/ESE-MONDAY">
                 <BsGithub size={16} className='md:hidden flex' />
                 <p className='text-lg font-roboto font-medium hidden md:flex'>Github</p>
                 </Link>
-              <Link className='hover:text-[#ea4c89]' href="https://twitter.com/EseMonday1">
+              <Link className=' navigation' href="https://twitter.com/EseMonday1">
                 <BsTwitter size={16} className='md:hidden flex'/>
                 <p className='text-lg font-roboto font-medium hidden md:flex'>Twitter</p>
                 </Link>
-                <Link className='hover:text-[#ea4c89]' href="https://ese-monday.hashnode.dev/">
+                <Link className='navigation' href="https://ese-monday.hashnode.dev/">
                 <FaHashnode size={16} className='md:hidden flex'/>
                 <p className='text-lg font-roboto font-medium hidden md:flex'>Hashnode</p>
                 </Link>
-            </div>
+            </nav>
             <div className='mt-8 max-w-[1000px] mx-auto '>
                   <div className=' w-full mt-8   flex justify-between  '>
                   <h1 className='text-[45px] md:text-[90px] text-white/80 font-roboto font-bold'> Hey 👋🏾 <br />I&apos;m Ese</h1>
