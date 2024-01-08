@@ -44,6 +44,12 @@ const handleSubmit = async (e: any) => {
     if (response.ok) {
       const data = await response.json();
       alert(`Thank you for your interest ${formData.name}! We will get back to you soon!`);
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      })
     } else {
       alert('Something went wrong, please try again later');
     }
