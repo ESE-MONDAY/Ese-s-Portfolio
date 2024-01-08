@@ -1,5 +1,6 @@
 "use client"
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import sendMail from '../api/send/route';
 
 
 
@@ -18,22 +19,35 @@ const Contact  = () => {
     });
   };
 
-  const handleSubmit = async(e: any) => {
-    e.preventDefault();
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      alert('Please fill out all required fields.');
-      return;
-    }
-    const emailDetails = {
-      from: formData.email,
-      subject: formData.subject,
-      html: `
-      <p><strong>Name:</strong> ${formData.name}</p>
-      <p><strong>Message:</strong> ${formData.message}</p>
-      `
-    };
- 
+const handleSubmit = async (e: any) => {
+  e.preventDefault();
+
+  if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+    alert('Please fill out all required fields.');
+    return;
   }
+
+  try {
+    const response = await fetch("api/send", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData), // Pass the actual formData object here
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      alert(`Thank you for your interest ${formData.name}! We will get back to you soon!`);
+    } else {
+      alert('Something went wrong, please try again later');
+    }
+  } catch (err) {
+    console.error('Error submitting form:', err);
+    alert('An error occurred, please try again later');
+  }
+};
+
 
 
   return (
