@@ -19,23 +19,24 @@ const Contact  = () => {
     });
   };
 
-
-
-  const handleSendEmail = async () => {
-    try {
-      const emailData = await sendEmail({
-        from: formData.email,
-        to: ['mondayese8@gmail.com'],
-        subject: 'Hello world',
-        react: EmailTemplate({ firstName: formData.name, message: formData.message }),
-        text: 'This is the plain text content of the email.',
-      });
-
-      console.log('Email sent successfully:', emailData);
-    } catch (error) {
-      console.error('Error sending email:', error);
+  const handleSubmit = async(e: any) => {
+    e.preventDefault();
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      alert('Please fill out all required fields.');
+      return;
     }
-  };
+    const emailDetails = {
+      from: formData.email,
+      subject: formData.subject,
+      html: `
+      <p><strong>Name:</strong> ${formData.name}</p>
+      <p><strong>Message:</strong> ${formData.message}</p>
+      `
+    };
+ 
+  }
+
+
   return (
     <div className='py-8 md:p-24 text-[#363636] ' id='contact'>
          <div className="heading">
@@ -45,7 +46,7 @@ const Contact  = () => {
             <div className=' px-4 max-w-[600px]'>
                <p className='text-base mt-4 text-justify' id='right-text'>I am open to <span className='font-bold'>building projects</span> and  <span className='font-bold'>Technical Wrting </span> opportunities. You can also pitch me your Open-Source Project</p>
                
-               <form onSubmit={handleSendEmail} className='flex flex-col mt-8 '>
+               <form onSubmit={handleSubmit} className='flex flex-col mt-8 '>
               <label htmlFor="name" className='font-bold font-merriweather'>What&apos;s your name?</label>
               <input 
               type="text" 
@@ -88,7 +89,7 @@ const Contact  = () => {
                   
                   type="button"
                   value="Submit"
-                  onClick={handleSendEmail}
+                  onClick={handleSubmit}
                   className='transition-all text-[#363636] border-[#363636] border-[1px] hover:text-[#fff] mt-4 p-4 rounded-md w-[50%] bg-transparent hover:bg-[#363636] ease-in-out duration-300'
                 />
             </form>
