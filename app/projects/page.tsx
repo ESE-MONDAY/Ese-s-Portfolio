@@ -21,34 +21,7 @@ const Works = () => {
     }
   }, [])
   const container1 = useRef(null);
-  useLayoutEffect(() => {
-    let context = gsap.context(() => {
-      const t1 = gsap.timeline()
-      .from('#title', {
-        y: 110,
-        duration: 1,
-        ease: 'power2.out',
-      }).from('#subtitle', {
-        y: 110,
-        duration: 1,
-        ease: 'power2.out',
-      }, '-=0.5')
-      .from('#subtitle2', {
-        y: 110,
-        duration: 1,
-        ease: 'power2.out',
-      }, '-=0.5')
-      .from('#right-text', {
-        x: '100%',
-        duration: 1,
-        stagger: 0.1,
-        ease: 'power2.out',
-      }, '-=0.5')
-      
-
-    }, container1)
-    return () => context.revert()
-  }, [])
+ 
   return (
     <>
     <main className='text-[#363636] h-full overflow-y-auto  py-8 md:p-24' ref={container1}>
