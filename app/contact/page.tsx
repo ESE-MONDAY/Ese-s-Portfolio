@@ -1,7 +1,6 @@
 "use client"
 import React, {useState} from 'react'
-import { sendEmail } from '../api/send/route';
-import { EmailTemplate } from '../../components/EmailTemplate';
+
 
 
 const Contact  = () => {
