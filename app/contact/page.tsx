@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from 'react';
-import sendMail from '../api/send/route';
+
 
 
 
@@ -33,7 +33,12 @@ const handleSubmit = async (e: any) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData), // Pass the actual formData object here
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        subject: formData.subject,
+      }), // Pass the actual formData object here
     });
 
     if (response.ok) {
