@@ -38,7 +38,7 @@ const handleSubmit = async (e: any) => {
         email: formData.email,
         message: formData.message,
         subject: formData.subject,
-      }), // Pass the actual formData object here
+      }),
     });
 
     if (response.ok) {

@@ -14,7 +14,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     <h2>{subject}</h2>
     <h1>Hi, my name is {name}! </h1>
     <p>{message}</p>
-    <p>You can reach out to me on{email}</p>
+    <p>You can reach out to me on {email}</p>
 
   </div>
 );
