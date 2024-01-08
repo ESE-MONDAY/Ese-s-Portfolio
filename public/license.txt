@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bunny Female Character
+* source:	https://sketchfab.com/3d-models/bunny-female-character-f7f4882d433b4d6d8af51b7a8b569430
+* author:	himanshu (https://sketchfab.com/rajput.1561)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bunny Female Character" (https://sketchfab.com/3d-models/bunny-female-character-f7f4882d433b4d6d8af51b7a8b569430) by himanshu (https://sketchfab.com/rajput.1561) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

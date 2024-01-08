@@ -12,7 +12,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'merriweather': ['Merriweather', 'serif'],
-      'roboto': ['Roboto', 'sans-serif'],
+          'roboto': ['Roboto', 'sans-serif'],
+          'Courgette': ['Courgette', 'sans-serif'],
+          "gallient": ["Gallient"],
       },
       colors:{
         'violet-red': {
