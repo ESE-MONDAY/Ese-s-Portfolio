@@ -23,13 +23,13 @@ const Metadata: Metadata = {
     description: 'Ese Monday is a dynamic software developer based in Lagos Nigeria',
     images: [
       {
-        url: 'https://esemonday.com/images/cover.jpg',
+        url: 'https://esemonday.study/images/cover.jpg',
         width: 800,
         height: 600,
         alt: 'Og Image Alt',
       },
       {
-        url: 'https://esemonday.com/images/cover.jpg',
+        url: 'https://esemonday.study/images/cover.jpg',
         width: 900,
         height: 800,
         alt: 'Og Image Alt Second',
