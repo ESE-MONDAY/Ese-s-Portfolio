@@ -72,10 +72,10 @@ export default function RootLayout({
     <html lang="en">
         <head>
             <meta charSet="utf-8" />
-            <title>Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate..</title>
+            <title>Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate.</title>
             <meta name="software developer" content="Ese Monday is a dynamic software developer based in Lagos Nigeria" />
             <meta name="author" content="Ese Monday" />
-            <meta name="description" content=" Experienced Frontend Engineer, Accomplished Technical Writer, and Devoted FOSS Advocate with a rich background spanning over 3 years. Explore a curated showcase of my innovative projects and delve deeper into my professional journey and expertise" />
+            <meta name="description" content=" Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
             <meta name="keywords" content="Ese Monday, Ese, Monday, Ese Monday Portfolio, Ese Monday Software Developer, Ese Monday Frontend Engineer, Ese Monday Technical Writer, Ese Monday FOSS Advocate, Ese Monday Blockchain Engineer, Ese Monday Lagos Nigeria, Ese Monday Software Developer Lagos Nigeria, Ese Monday Frontend Engineer Lagos Nigeria, Ese Monday Technical Writer Lagos Nigeria, Ese Monday FOSS Advocate Lagos Nigeria, Ese Monday Blockchain Engineer Lagos Nigeria" />
 
             <meta property="og:title" content="Use Client - Frontend Engineer and Technical Writer" />
