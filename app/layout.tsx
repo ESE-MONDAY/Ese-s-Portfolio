@@ -53,7 +53,7 @@ export default function RootLayout({
 }) {
   const container = useRef(null);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuClose = () => {
     setIsMenuOpen(!isMenuOpen);
