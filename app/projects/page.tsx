@@ -26,7 +26,7 @@ const Works = () => {
     <>
     <main className='text-[#363636] h-full overflow-y-auto px-4  py-10 md:p-24' ref={container1}>
     <div className="heading">
-             <h3 className='text-center text-[60px] sm:text-[180px] font-gallient'>All <br/> Projects</h3>
+             <h1 className='text-center text-[60px] sm:text-[180px] font-gallient'>All <br/> Projects</h1>
 
         </div>
         <div className="projects mt-8">
@@ -36,27 +36,26 @@ const Works = () => {
           <Image src={MockupImage} alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
           </div>
           
-          <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h4>
-          <p className='text-base mt-2 sm:mt-4'>
-            <Link href="https://www.mymarketsq.com/" target='_blank'>Visit Webpage</Link>
-          </p>
+          <h2 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h2>
+            <Link href="https://www.mymarketsq.com/"  className="text-base mt-2 sm:mt-4" target='_blank'>Visit Webpage</Link>
+         
         </div>
         <div className='w-full flex justify-end mt-8'>
         <div className='sm:w-[50%]'>
           <Image src={cover} alt='Markin Architecture Studio based in Brooklyn New York' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Markin Architecture Studio </h4>
-          <p className='text-base mt-2 sm:mt-4'>
-            <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" target='_blank'>Visit Webpage</Link>
-          </p>
+         
+            <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
+          
         </div>
         </div>
         <div className='flex mt-4'>
           <div className='sm:w-[50%]'>
               <Image src={cover2} alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
               <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Skincare Website </h4>
-              <p className='text-base mt-2 sm:mt-4'>
-              <Link href="https://verdant-bubblegum-5acbc7.netlify.app/" target='_blank'>Visit Webpage</Link>
-              </p>
+              
+              <Link href="https://verdant-bubblegum-5acbc7.netlify.app/" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
+           
           </div>
          
          
@@ -67,33 +66,33 @@ const Works = () => {
       </div>
       <div className='flex  flex-col sm:flex-row mt-20'>
       <div className='basis-1/3 flex sm:flex-col sm:gap-0 gap-3'>
-        <p className='text-3xl sm:text-6xl sm:mt-8  font-gallient  font-semibold text-start lg:ml-40 '>Latest</p>
-        <p className='text-3xl sm:text-6xl sm:mt-4  font-gallient  font-semibold text-start lg:ml-48  '>Articles</p>
+        <h2 className='text-3xl sm:text-6xl sm:mt-8  font-gallient  font-semibold text-start lg:ml-40 '>Latest</h2>
+        <h2 className='text-3xl sm:text-6xl sm:mt-4  font-gallient  font-semibold text-start lg:ml-48  '>Articles</h2>
         <div className='mt-8 hidden sm:flex  '>
         
-          <p className='sm:ml-40 '>Writing is the art of discovering <br />what you believe. - Gustave Flaubert</p>
+          <q className='sm:ml-40 '>Writing is the art of discovering <br />what you believe. - Gustave Flaubert</q>
         </div>
         </div>
 
          <div className='lg:basis-1/2 w-full'>
      
                 <div className='mt-4 sm:mt-12 '>
-                  <p className='text-lg  font-semibold text-left '>
+                  <h2 className='text-lg  font-semibold text-left '>
                   Managing Cookies and Ensuring User Privacy Compliance.
-                  </p>
-                  <p className='text-md mt-2  text-left '>
+                  </h2>
+                  <h4 className='text-md mt-2  text-left '>
                    Nov 15, 2023
-                  </p>
-                  <p className='text-lg mt-2 text-justify '>Configuring cookies within your application using &ldquo;next-cookies&rdquo;</p> 
+                  </h4>
+                  <h3 className='text-lg mt-2 text-justify '>Configuring cookies within your application using &ldquo;next-cookies&rdquo;</h3> 
                 </div>
                 <div className='mt-8'>
-                  <p className='text-lg  font-semibold text-left '>
+                  <h2 className='text-lg  font-semibold text-left '>
                   A Comprehensive Guide to Understanding OOP Principles - Encapsulation, Abstraction, Polymorphism and Inheritance
-                  </p>
-                  <p className='text-md mt-2 text-left '>
+                  </h2>
+                  <h4 className='text-md mt-2 text-left '>
                     Jan 30, 2023
-                  </p>
-                  <p className='text-lg mt-2 text-justify'>Object-oriented programming (OOP) is an exciting and powerful programming paradigm used by many modern languages to create object-oriented programs.</p>
+                  </h4>
+                  <h3 className='text-lg mt-2 text-justify'>Object-oriented programming (OOP) is an exciting and powerful programming paradigm used by many modern languages to create object-oriented programs.</h3>
                   
                 </div>
                 <div className='mt-2 flex justify-end'>

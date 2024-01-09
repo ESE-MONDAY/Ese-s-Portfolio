@@ -64,11 +64,11 @@ const handleSubmit = async (e: any) => {
   return (
     <div className='py-10 md:p-24 text-[#363636] px-4 ' id='contact'>
          <div className="heading">
-             <h3 className='text-center text-[60px] sm:text-[120px] font-gallient'>Let&apos;s start <br/> a project</h3>
+             <h1 className='text-center text-[60px] sm:text-[120px] font-gallient'>Let&apos;s start <br/> a project</h1>
         </div>
         <div className='mt-16 sm:flex w-full  justify-around'>
             <div className=' px-4 max-w-[600px]'>
-               <h4 className='text-base mt-4 text-justify' id='right-text'>I am open to <span className='font-bold'>building projects</span> and  <span className='font-bold'>Technical Wrting </span> opportunities. You can also pitch me your Open-Source Project</h4>
+               <h2 className='text-base mt-4 text-justify' id='right-text'>I am open to <span className='font-bold'>building projects</span> and  <span className='font-bold'>Technical Wrting </span> opportunities. You can also pitch me your Open-Source Project</h2>
                
                <form onSubmit={handleSubmit} className='flex flex-col mt-8 '>
               <label htmlFor="name" className='font-bold font-merriweather'>What&apos;s your name?</label>
