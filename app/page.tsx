@@ -26,7 +26,10 @@ useEffect(() => {
       <section className=''>
         <div className='flex flex-col justify-between'>
           <div className=''>
-          <h1 className='text-[60px]  sm:text-9xl font-gallient '>Frontend Engineer</h1>
+          <h1 className='text-[60px]  sm:text-9xl font-gallient '>
+            <span aria-hidden >Ese Monday</span>
+            
+            Frontend Engineer</h1>
           <div className=' mt-4 flex flex-col md:flex-row justify-around'>
           <Image src={photo} alt='Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate'  className='w-[200px] ' style={{objectFit: "cover"}} />
             <div className='mt-4 flex flex-col justify-center sm:items-center'>

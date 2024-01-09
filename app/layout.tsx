@@ -154,7 +154,7 @@ export default function RootLayout({
            <div className='flex sm:hidden flex-col'>
             <div className='flex justify-between w-full p-4'>
               <Link href="/" className='font-bold font-merriweather text-3xl '>
-                <h1>Ese.</h1></Link>
+                Ese.</Link>
               <button className='sm:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 {
                   isMenuOpen ? <MdOutlineClose size={24} /> : <RiMenu3Line size={24} />
