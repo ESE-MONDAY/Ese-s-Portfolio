@@ -4,11 +4,46 @@ import Head from 'next/head';
 import Link from 'next/link';
 import CustomCursor from '../components/CustomCursor';
 import Footer from '../components/Footer';
+import { RiMenu3Line } from "react-icons/ri";
+import { MdOutlineClose } from "react-icons/md";
+import { Metadata } from 'next';
 
 
 
 import { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
+
+
+const Metadata: Metadata = {
+  title: 'Ese Monday - Portfolio',
+  description: 'Ese Monday is a dynamic software developer based in Lagos Nigeria',
+  openGraph: {
+    url: 'https://esemonday.study',
+    title: 'Ese Monday - Portfolio',
+    description: 'Ese Monday is a dynamic software developer based in Lagos Nigeria',
+    images: [
+      {
+        url: 'https://esemonday.com/images/cover.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Og Image Alt',
+      },
+      {
+        url: 'https://esemonday.com/images/cover.jpg',
+        width: 900,
+        height: 800,
+        alt: 'Og Image Alt Second',
+      },
+      { url: 'https://esemonday.study/images/cover.jpg' },
+      { url: 'https://esemonday.study/images/cover.jpg' },
+    ],
+    siteName: 'Ese Monday - Portfolio',
+  },
+  twitter: {
+    site: '@EseMonday1',
+   
+  },
+};
 
 
 export default function RootLayout({
@@ -17,6 +52,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const container = useRef(null);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  const handleMenuClose = () => {
+    setIsMenuOpen(!isMenuOpen);
+
+  }
+
+
 
 
   useLayoutEffect(() => {
@@ -77,10 +121,11 @@ export default function RootLayout({
                 </p>
               </div>
         </div>
-        <div className='h-full px-4'>
-        <nav className='text-[#363636] fixed py-4  flex sm:justify-end items-center w-full sm:px-32 '>
-      
-          <div className=' gap-8 hidden sm:flex'>
+        <div className='h-full relative'>
+        <nav className='text-[#363636]  sm:px-32 '>
+
+           <div className='hidden sm:flex sm:justify-end items-center w-full'>
+           <div className=' gap-8 flex px-8 py-4'>
               <Link className='navigation' href="/" >
                 <p className=' text-start text-lg font-roboto font-medium flex '>Home</p>
                 </Link> 
@@ -98,7 +143,48 @@ export default function RootLayout({
                 <p className='text-lg font-roboto font-medium flex '>Contact</p>
                 </Link> 
 
-          </div>
+            </div>
+           </div>
+           <div className='flex sm:hidden flex-col'>
+            <div className='flex justify-between w-full p-4'>
+              <Link href="/" className='font-bold font-merriweather text-3xl '>Ese.</Link>
+              <button className='sm:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                {
+                  isMenuOpen ? <MdOutlineClose size={24} /> : <RiMenu3Line size={24} />
+                }
+                </button>
+            </div>
+            <div className='relative'>
+            {isMenuOpen && (
+              <div className='bg-[#363636] text-[#fafaf8] w-full  fixed p-4 '>
+                <div className=' gap-8 flex flex-col px-8 py-4'>
+              <Link className='navigation ' href="/" onClick={handleMenuClose}>
+                <p className=' text-xl text-center font-roboto font-medium flex '>Home</p>
+                </Link> 
+                <Link className=' navigation' href="/projects" onClick={handleMenuClose} >
+                <p className='text-xl text-center  font-roboto font-medium flex '>Projects</p>
+                </Link>
+                <Link className='navigation' href="/about" onClick={handleMenuClose} >
+                <p className='text-xl text-center  font-roboto font-medium flex '>About</p>
+                </Link>
+                <Link className='navigation' href="https://ese-monday.hashnode.dev/" target='_blank' onClick={handleMenuClose} >
+                <p className='text-xl text-center  font-roboto font-medium flex '>Blog</p>
+                </Link> 
+                  
+                <Link className='navigation' href="/contact" onClick={handleMenuClose} >
+                <p className='text-xl text-center  font-roboto font-medium flex '>Contact</p>
+                </Link> 
+
+            </div>
+
+                
+              </div>
+            )}
+
+            </div>
+           
+           </div>
+          
        
        
 
@@ -106,7 +192,10 @@ export default function RootLayout({
       
         </nav>
         <CustomCursor/>
+        <div className='pt-[10vh] h-full  '>
         {children}
+        </div>
+      
         <Footer/>
 
         </div>

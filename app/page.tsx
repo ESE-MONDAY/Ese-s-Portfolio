@@ -8,41 +8,6 @@ import MockupImage from '../public/MockupImage.png'
 import photo from '../public/photo.jpg'
 
 
-
-
-
-
-
-
-const  Articles = [
-  {
-    id: 1,
-    title: "Managing Cookies and Ensuring User Privacy Compliance.",
-    date: "Nov 18, 2023",
-    link: "https://ese-monday.hashnode.dev/managing-cookies-and-ensuring-user-privacy-compliance",
-  },
-  {
-    id: 2,
-    title: "Crafting Eye-Catching READMEs with Git Hub and Markdown Techniques",
-    date: "Feb 16, 2023",
-    link: "https://ese-monday.hashnode.dev/crafting-eye-catching-readmes-with-git-hub-and-markdown-techniques",
-  },
-  {
-    id: 3,
-    title: "CSS Reset: The Importance of Starting with a Clean Slate",
-    date: "Feb 3, 2023",
-    link: "https://ese-monday.hashnode.dev/css-reset-the-importance-of-starting-with-a-clean-slate",
-  },
-  {
-    id: 4,
-    title: "A Comprehensive Guide to Understanding OOP Principles - Encapsulation, Abstraction, Polymorphism and Inheritance",
-    date: "Jan 30, 2023",
-    link: "https://ese-monday.hashnode.dev/a-comprehensive-guide-to-understanding-oop-principles-encapsulation-abstraction-polymorphism-and-inheritance",
-  },
- 
-]
-
-
 const Home = () => {
 useEffect(() => {
   {
@@ -56,8 +21,8 @@ useEffect(() => {
  
   
   return (
-    <div className='overflow-auto'>
-        <div className='text-[#363636] py-8 sm:p-24 overflow-auto h-full  '>
+    <div className='overflow-auto px-4'>
+        <div className='text-[#363636] py-10 sm:p-24 overflow-auto h-full  '>
       <section className=''>
         <div className='flex flex-col justify-between'>
           <div className=''>

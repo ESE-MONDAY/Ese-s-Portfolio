@@ -31,7 +31,7 @@
     "pages/**/*.ts",
     "pages/**/*.tsx",
     ".next/types/**/*.ts"
-, "app/not-found.jsx", "api/sendgrid.js"  ],
+, "app/not-found.jsx", "api/sendgrid.js", "utils/sendMail.js"  ],
   "exclude": [
     "node_modules"
   ]

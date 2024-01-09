@@ -8,8 +8,8 @@ import '../../styles/globals.css';
 
 const AboutMe = () => {
   return (
-    <div className='text-[#363636] p-2 md:p-24 '>
-        <div className="heading relative">
+    <div className='text-[#363636] py-10 px-4 md:p-24  '>
+        <div className="heading ">
              <h3 className='text-center text-[60px] sm:text-[180px] font-gallient'>A little bit <br/> about me</h3>
             
         </div>

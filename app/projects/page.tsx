@@ -24,7 +24,7 @@ const Works = () => {
  
   return (
     <>
-    <main className='text-[#363636] h-full overflow-y-auto  py-8 md:p-24' ref={container1}>
+    <main className='text-[#363636] h-full overflow-y-auto px-4  py-10 md:p-24' ref={container1}>
     <div className="heading">
              <h3 className='text-center text-[60px] sm:text-[180px] font-gallient'>All <br/> Projects</h3>
 
