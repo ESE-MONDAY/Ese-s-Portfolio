@@ -26,12 +26,12 @@ useEffect(() => {
       <section className=''>
         <div className='flex flex-col justify-between'>
           <div className=''>
-          <p className='text-[60px]  sm:text-9xl font-gallient '>Frontend Engineer</p>
+          <h2 className='text-[60px]  sm:text-9xl font-gallient '>Frontend Engineer</h2>
           <div className=' mt-4 flex flex-col md:flex-row justify-around'>
-          <Image src={photo} alt='Ese Monday' className='w-[200px] ' style={{objectFit: "cover"}} />
+          <Image src={photo} alt='Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate'  className='w-[200px] ' style={{objectFit: "cover"}} />
             <div className='mt-4 flex flex-col justify-center sm:items-center'>
-            <p className='text-[40px]  sm:text-8xl font-gallient '> Technical Writer</p>
-            <p className='text-[40px]  sm:text-8xl font-gallient mt-4 '> FOSS Advocate</p>
+            <h3 className='text-[40px]  sm:text-8xl font-gallient '> Technical Writer</h3>
+            <h3 className='text-[40px]  sm:text-8xl font-gallient mt-4 '> FOSS Advocate</h3>
             </div>
           </div>
 
@@ -50,14 +50,14 @@ useEffect(() => {
   
      <section className='mt-16 '>
       <div className="heading flex flex-col ">
-      <h3 className='text-center text-[70px] sm:text-[180px] font-gallient'>Selected</h3>
-      <h3 className='ml-16 text-end  -mt-8  font-gallient text-[50px] sm:text-[120px] '>Projects</h3>
+      <h2 className='text-center text-[70px] sm:text-[180px] font-gallient'>Selected</h2>
+      <h2 className='ml-16 text-end  -mt-8  font-gallient text-[50px] sm:text-[120px] '>Projects</h2>
       </div>
       <div className="projects mt-8">
         
         <div className='sm:w-[50%]'>
           <div className='bg-white p-8'>
-          <Image src={MockupImage} alt='Markin Architecture Studio' style={{objectFit:"cover"}}  />
+          <Image src={MockupImage} alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
           </div>
           
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h4>
@@ -67,7 +67,7 @@ useEffect(() => {
         </div>
         <div className='w-full flex justify-end mt-8'>
         <div className='sm:w-[50%]'>
-          <Image src={cover} alt='Markin Architecture Studio' style={{objectFit:"cover"}} />
+          <Image src={cover} alt='Markin Architecture Studio  based in Brooklyn New York city' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Markin Architecture Studio </h4>
           <p className='text-base mt-2 sm:mt-4'>
             <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" target='_blank'>Visit Webpage</Link>
@@ -76,7 +76,7 @@ useEffect(() => {
         </div>
         <div className='sm:flex mt-4'>
           <div className='sm:w-[50%]'>
-              <Image src={cover2} alt='Markin Architecture Studio' style={{objectFit:"cover"}}  />
+              <Image src={cover2} alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
               <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Skincare Website </h4>
               <p className='text-base mt-2 sm:mt-4'>
               <Link href="https://verdant-bubblegum-5acbc7.netlify.app/" target='_blank'>Visit Webpage</Link>

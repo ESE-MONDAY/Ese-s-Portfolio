@@ -102,6 +102,10 @@ export default function RootLayout({
         <Head>
             <title>Ese Monday - Portfolio</title>
             <meta name="software developer" content="Ese Monday is a dynamic software developer based in Lagos Nigeria" />
+            <meta name="author" content="Ese Monday" />
+
+            <meta property="og:title" content="Use Client - Frontend Engineer and Technical Writer" />
+              <meta property="og:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
             <link rel="icon" href="/favicon.ico" />
           </Head>
       <body>

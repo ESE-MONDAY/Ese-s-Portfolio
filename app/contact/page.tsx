@@ -68,7 +68,7 @@ const handleSubmit = async (e: any) => {
         </div>
         <div className='mt-16 sm:flex w-full  justify-around'>
             <div className=' px-4 max-w-[600px]'>
-               <p className='text-base mt-4 text-justify' id='right-text'>I am open to <span className='font-bold'>building projects</span> and  <span className='font-bold'>Technical Wrting </span> opportunities. You can also pitch me your Open-Source Project</p>
+               <h4 className='text-base mt-4 text-justify' id='right-text'>I am open to <span className='font-bold'>building projects</span> and  <span className='font-bold'>Technical Wrting </span> opportunities. You can also pitch me your Open-Source Project</h4>
                
                <form onSubmit={handleSubmit} className='flex flex-col mt-8 '>
               <label htmlFor="name" className='font-bold font-merriweather'>What&apos;s your name?</label>

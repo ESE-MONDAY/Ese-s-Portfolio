@@ -15,7 +15,7 @@ const AboutMe = () => {
         </div>
         <div className='sm:flex justify-between'>
             <div className='sm:w-[50%] h-[400px]'>
-                <Image src={photo} alt="Ese Monday" style={{objectFit: "contain", height: "100%"}} />
+                <Image src={photo} alt='Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate'  style={{objectFit: "contain", height: "100%"}} />
             </div>
             <div className='basis-1/2 sm:px-16 flex justify-between flex-col'>
         <div className='max-w-[400px] overflow-hidden' >
@@ -29,13 +29,13 @@ const AboutMe = () => {
                 </Link></p>
               <p className='text-base  mt-4 text-justify'>Apart from my coding pursuits, I am an avid gamer and I have two furry companions - Billy and Shepherd. They remind me to breathe and reconnect with my surrounding.</p>
               <div className='flex gap-4 mt-4 '>
-                <Link href="https://twitter.com/EseMonday1">
+                <Link href="https://twitter.com/EseMonday1" target='_blank'>
                 <FaTwitter size={20}  />
                 </Link>
-                <Link href="https://www.linkedin.com/in/ese-monday/">
+                <Link href="https://www.linkedin.com/in/ese-monday/" target='_blank'>
                   <FaLinkedin size={20}/>
                 </Link>
-                <Link href="https://github.com/ESE-MONDAY">
+                <Link href="https://github.com/ESE-MONDAY" target='_blank'>
                   <FaGithub size={20} />
                 </Link>
                 
