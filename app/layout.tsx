@@ -14,36 +14,7 @@ import { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
 
 
-const Metadata: Metadata = {
-  title: 'Ese Monday - Portfolio',
-  description: 'Ese Monday is a dynamic software developer based in Lagos Nigeria',
-  openGraph: {
-    url: 'https://esemonday.study',
-    title: 'Ese Monday - Portfolio',
-    description: 'Ese Monday is a dynamic software developer based in Lagos Nigeria',
-    images: [
-      {
-        url: 'https://esemonday.study/images/cover.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Og Image Alt',
-      },
-      {
-        url: 'https://esemonday.study/images/cover.jpg',
-        width: 900,
-        height: 800,
-        alt: 'Og Image Alt Second',
-      },
-      { url: 'https://esemonday.study/images/cover.jpg' },
-      { url: 'https://esemonday.study/images/cover.jpg' },
-    ],
-    siteName: 'Ese Monday - Portfolio',
-  },
-  twitter: {
-    site: '@EseMonday1',
-   
-  },
-};
+
 
 
 export default function RootLayout({
@@ -99,7 +70,7 @@ export default function RootLayout({
   return (
     
     <html lang="en">
-        <Head>
+        <head>
             <meta charSet="utf-8" />
             <title>Ese Monday - Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more.</title>
             <meta name="software developer" content="Ese Monday is a dynamic software developer based in Lagos Nigeria" />
@@ -110,7 +81,7 @@ export default function RootLayout({
             <meta property="og:title" content="Use Client - Frontend Engineer and Technical Writer" />
               <meta property="og:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
             <link rel="icon" href="/favicon.ico" />
-          </Head>
+          </head>
       <body>
       <div className='relative overflow-auto' ref={container}>
       <div id='intro-slider' className='fixed h-[100vh] z-10 w-screen overflow-hidden'>
