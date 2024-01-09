@@ -29,6 +29,8 @@ useEffect(() => {
           <div className=''>
           <h1 className='text-[60px]  sm:text-9xl font-gallient '>
             <span aria-hidden >Ese Monday</span>
+            <span aria-hidden >Technical Writer</span>
+            <span aria-hidden >FOSS Advocate</span>
             
             Frontend Engineer</h1>
           <div className=' mt-4 flex flex-col md:flex-row justify-around'>
