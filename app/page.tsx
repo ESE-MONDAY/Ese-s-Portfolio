@@ -6,12 +6,7 @@ import cover from '../public/cover.jpg'
 import cover2 from '../public/cover2.png'
 import MockupImage from '../public/MockupImage.png'
 import photo from '../public/photo.jpg'
-import { Metadata } from 'next'
 
-const Metadata: Metadata = {
-  title: 'Ese Monday - Portfolio',
-  description: 'Ese Monday is a dynamic software developer based in Lagos Nigeria',
-}
 
 
 const Home = () => {
