@@ -171,7 +171,7 @@ export default function RootLayout({
       
         </nav>
         <CustomCursor/>
-        <div className='pt-[10vh] h-full  '>
+        <div className=' h-full  '>
         {children}
         </div>
       
