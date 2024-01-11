@@ -10,14 +10,14 @@ const Work = () => {
             setIsOpen(!isOpen)
     }
   return (
-    <div id='triggerElement' className='mt-16 md:m-20 lg:m-40 flex flex-col lg:flex-row sm;px-16 justify-between'>
+    <div id='triggerElement' className='mt-16  lg:my-40 flex flex-col lg:flex-row  justify-between'>
       <div className='basis-1/3 flex sm:flex-col sm:gap-0 gap-3'>
-        <h2 className='text-3xl sm:text-6xl sm:mt-8  font-gallient  font-semibold text-start lg:ml-40 '>Resume</h2>
-        <h2 className='text-3xl sm:text-6xl sm:mt-4  font-gallient  font-semibold text-start lg:ml-48  '>Experience</h2>
+        <h2 className='text-3xl sm:text-6xl sm:mt-8  font-gallient  font-semibold text-start lg:ml-20 '>Resume</h2>
+        <h2 className='text-3xl sm:text-6xl sm:mt-4  font-gallient  font-semibold text-start lg:ml-24  '>Experience</h2>
         </div>
-         <div className='lg:basis-1/2 w-full'>
+         <div className='lg:basis-1/2 w-full px-4  sm:px-0'>
      
-                <div className='mt-4 sm:mt-12'>
+                <div className='mt-4 sm:mt-12 '>
                   <h3 className='text-lg  font-semibold text-left '>
                     Frontend Engineer at Profitall
                   </h3>

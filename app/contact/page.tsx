@@ -64,7 +64,7 @@ const handleSubmit = async (e: any) => {
   return (
     <div className='py-10 md:p-24 text-[#363636] px-4 ' id='contact'>
          <div className="heading">
-             <h1 className='text-center text-[60px] sm:text-[120px] font-gallient'>Let&apos;s start <br/> a project</h1>
+             <h1 className='text-center text-[60px] sm:text-9xl font-gallient'>Let&apos;s start <br/> a project</h1>
         </div>
         <div className='mt-16 sm:flex w-full  justify-around'>
             <div className=' px-4 max-w-[600px]'>

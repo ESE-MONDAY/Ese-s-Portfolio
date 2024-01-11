@@ -8,16 +8,18 @@ import '../../styles/globals.css';
 
 const AboutMe = () => {
   return (
-    <div className='text-[#363636] py-10 px-4 md:p-24  '>
+    <div className='text-[#363636] py-10 px-4 md:px-24  '>
+      {/* Heading */}
         <div className="heading ">
-             <h1 className='text-center text-[60px] sm:text-[180px] font-gallient'>A little bit <br/> about me</h1>
-            
+             <h1 className='text-center text-[60px] sm:text-9xl font-gallient'>A little bit <br/> about me</h1>
+  
         </div>
-        <div className='sm:flex justify-between'>
-            <div className='sm:w-[50%] h-[400px]'>
+        {/* Projects*/}
+        <div className='flex flex-col lg:flex-row justify-between '>
+            <div className='lg:w-[50%] w-full flex justify-between items-center   h-[400px]'>
                 <Image src={photo} alt='Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate'  style={{objectFit: "contain", height: "100%"}} />
             </div>
-            <div className='basis-1/2 sm:px-16 flex justify-between flex-col'>
+            <div className='lg:w-[50%] w-full flex justify-between items-center flex-col'>
         <div className='max-w-[400px] overflow-hidden' >
              <p className='text-2xl mt-4 text-justify' id='right-text'>I go beyond creating <span className='font-bold'>visually appealing interfaces;</span>  I prioritize <span className='font-bold'>accessibility</span>,  <span className='font-bold'>SEO</span>, and <span className='font-bold'>performance optimization.</span> </p>
               <p id='right-text' className='text-base mt-4 text-justify'>In 2019, during my fourth year at university,I had the opportunity to undergo my Internship at a software development company.

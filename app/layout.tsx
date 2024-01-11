@@ -1,17 +1,16 @@
 'use client'
 import '../styles/globals.css'
-import Head from 'next/head';
+import { useLayoutEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
 import Link from 'next/link';
 import CustomCursor from '../components/CustomCursor';
 import Footer from '../components/Footer';
 import { RiMenu3Line } from "react-icons/ri";
 import { MdOutlineClose } from "react-icons/md";
-import { Metadata } from 'next';
 
 
 
-import { useLayoutEffect, useRef, useState, useEffect } from 'react';
-import gsap from 'gsap';
+
 
 
 export default function RootLayout({
@@ -80,9 +79,9 @@ export default function RootLayout({
             <link rel="icon" href="/favicon.ico" />
           </head>
       <body>
-      <div className='relative overflow-auto' ref={container}>
-      <div id='intro-slider' className='fixed h-[100vh] z-10 w-screen overflow-hidden'>
-        <div className=' w-full flex justify-center items-center flex-col h-[80%]'>
+      <div className=' overflow-auto' ref={container}>
+      <div id='intro-slider' className='fixed h-[100vh] z-10 w-screen overflow-hidden flex justify-center items-center'>
+       
               <p className='text-6xl lg:text-9xl mb-4 font-bold  text-[#fafaf8] font-gallient  bg-transparent text'>
                 <span className='inline-block'  id='portfolio'   >P</span>
                 <span className='inline-block'  id='portfolio'  >O</span>
@@ -94,10 +93,10 @@ export default function RootLayout({
                 <span className='inline-block'  id='portfolio' >I</span>
                 <span className='inline-block'  id='portfolio' >O</span>
                 </p>
-              </div>
+            
         </div>
-        <div className='h-full relative'>
-        <nav className='text-[#363636]  sm:px-32 '>
+        <div className='h-full relative  '>
+        <nav className='text-[#363636] w-full sm:px-32 '>
 
            <div className='hidden sm:flex sm:justify-end items-center w-full'>
            <div className=' gap-8 flex px-8 py-4'>
@@ -121,7 +120,7 @@ export default function RootLayout({
             </div>
            </div>
            <div className='flex sm:hidden flex-col'>
-            <div className='flex justify-between w-full p-4'>
+            <div className='flex justify-between w-full py-2 px-4'>
               <Link href="/" className='font-bold font-merriweather text-3xl '>
                 Ese.</Link>
               <button className='sm:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>

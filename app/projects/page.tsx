@@ -25,12 +25,13 @@ const Works = () => {
   return (
     <>
     <main className='text-[#363636] h-full overflow-y-auto px-4  py-10 md:p-24' ref={container1}>
-    <div className="heading">
-             <h1 className='text-center text-[60px] sm:text-[180px] font-gallient'>All <br/> Projects</h1>
-
+      {/* Heading */}
+    <div className="heading p-4">
+             <h1 className='text-center text-[60px] sm:text-8xl font-gallient'>All <br/> Projects</h1>
         </div>
+          {/* Projects */}
         <div className="projects mt-8">
-        
+          {/* Project 1 */}
         <div className='sm:w-[50%]'>
           <div className='bg-white p-8'>
           <Image src={MockupImage} alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
@@ -40,6 +41,7 @@ const Works = () => {
             <Link href="https://www.mymarketsq.com/"  className="text-base mt-2 sm:mt-4" target='_blank'>Visit Webpage</Link>
          
         </div>
+        {/* Project 2 */}
         <div className='w-full flex justify-end mt-8'>
         <div className='sm:w-[50%]'>
           <Image src={cover} alt='Markin Architecture Studio based in Brooklyn New York' style={{objectFit:"cover"}} />
@@ -49,6 +51,7 @@ const Works = () => {
           
         </div>
         </div>
+        {/* Project 3 */}
         <div className='flex mt-4'>
           <div className='sm:w-[50%]'>
               <Image src={cover2} alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
@@ -60,31 +63,30 @@ const Works = () => {
          
          
         </div>
-        
-
-        
       </div>
-      <div className='flex  flex-col sm:flex-row mt-20'>
-      <div className='basis-1/3 flex sm:flex-col sm:gap-0 gap-3'>
-        <h2 className='text-3xl sm:text-6xl sm:mt-8  font-gallient  font-semibold text-start lg:ml-40 '>Latest</h2>
-        <h2 className='text-3xl sm:text-6xl sm:mt-4  font-gallient  font-semibold text-start lg:ml-48  '>Articles</h2>
+      {/* Articles */}
+
+      <div className='flex  flex-col sm:flex-row mt-20 justify-between'>
+      <div className='basis-1/3  flex sm:flex-col sm:gap-0 gap-3'>
+        <h2 className='text-3xl sm:text-6xl sm:mt-8  font-gallient  font-semibold text-start lg:ml-32 '>Latest</h2>
+        <h2 className='text-3xl sm:text-6xl sm:mt-4  font-gallient  font-semibold text-start lg:ml-36 '>Articles</h2>
         <div className='mt-8 hidden sm:flex  '>
         
-          <q className='sm:ml-40 '>Writing is the art of discovering <br />what you believe. - Gustave Flaubert</q>
+          <q className='sm:ml-24 '>Writing is the art of discovering <br />what you believe. - Gustave Flaubert</q>
         </div>
         </div>
-
          <div className='lg:basis-1/2 w-full'>
-     
-                <div className='mt-4 sm:mt-12 '>
+          {/* Article 1 */}
+          <div className='mt-4 sm:mt-12 '>
                   <h2 className='text-lg  font-semibold text-left '>
-                  Managing Cookies and Ensuring User Privacy Compliance.
-                  </h2>
+           Managing Cookies and Ensuring User Privacy Compliance.
+           </h2>
                   <h4 className='text-md mt-2  text-left '>
                    Nov 15, 2023
                   </h4>
                   <h3 className='text-lg mt-2 text-justify '>Configuring cookies within your application using &ldquo;next-cookies&rdquo;</h3> 
                 </div>
+                {/* Project 2 */}
                 <div className='mt-8'>
                   <h2 className='text-lg  font-semibold text-left '>
                   A Comprehensive Guide to Understanding OOP Principles - Encapsulation, Abstraction, Polymorphism and Inheritance

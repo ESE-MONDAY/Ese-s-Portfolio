@@ -22,20 +22,18 @@ useEffect(() => {
  
   
   return (
-    <div className='overflow-auto px-4'>
-        <div className='text-[#363636] py-10 sm:p-24 overflow-auto h-full  '>
+     <div className='text-[#363636] py-10 px-8  overflow-auto h-full  '>
+       {/* Hero section */}
       <section className=''>
         <div className='flex flex-col justify-between'>
           <div className=''>
-          <h1 className='text-[60px]  sm:text-9xl font-gallient '>
-            
-            
+          <h1 className='text-[40px]  sm:text-8xl font-gallient  '>
             Frontend Engineer</h1>
           <div className=' mt-4 flex flex-col md:flex-row justify-around'>
           <Image src={photo} alt='Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate'  className='w-[200px] ' style={{objectFit: "cover"}} />
             <div className='mt-4 flex flex-col justify-center sm:items-center'>
             <h3 className='text-[40px]  sm:text-8xl font-gallient '> Technical Writer</h3>
-            <h3 className='text-[40px]  sm:text-8xl font-gallient mt-4 '> FOSS Advocate</h3>
+            <h3 className='text-[40px]  sm:text-8xl font-gallient lg:mt-8 '> FOSS Advocate</h3>
             </div>
           </div>
 
@@ -45,22 +43,20 @@ useEffect(() => {
             <div className='sm:w-[50%]'>
             <p className='text-xl sm:text-3xl sm:max-w-[400px] ' id='link'>  3+ years of professional experience nudging early-stage brands and teams into greatness.</p>
             </div>
-         
           </div>
         </div>
-       
-
       </section>
   
+   {/* Projectsection */}
      <section className='mt-16 '>
-      <div className="heading flex flex-col ">
-      <h2 className='text-center text-[70px] sm:text-[180px] font-gallient'>Selected</h2>
-      <h2 className='ml-16 text-end  -mt-8  font-gallient text-[50px] sm:text-[120px] '>Projects</h2>
+      <div className="heading flex flex-row sm:flex-col gap-4 justify-center ">
+      <h2 className='text-center text-[40px] sm:text-8xl font-gallient'>Selected</h2>
+      <h2 className='text-center    font-gallient text-[40px] sm:text-8xl sm:ml-28 '>Projects</h2>
       </div>
       <div className="projects mt-8">
-        
+         {/* Project 1 section */}
         <div className='sm:w-[50%]'>
-          <div className='bg-white p-8'>
+          <div className=''>
           <Image src={MockupImage} alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
           </div>
           
@@ -69,6 +65,7 @@ useEffect(() => {
             <Link href="https://www.mymarketsq.com/" target='_blank'>Visit Webpage</Link>
           </p>
         </div>
+        {/* Project 2 section */}
         <div className='w-full flex justify-end mt-8'>
         <div className='sm:w-[50%]'>
           <Image src={cover} alt='Markin Architecture Studio  based in Brooklyn New York city' style={{objectFit:"cover"}} />
@@ -78,6 +75,7 @@ useEffect(() => {
           </p>
         </div>
         </div>
+        {/* Project 3 section */}
         <div className='sm:flex mt-4'>
           <div className='sm:w-[50%]'>
               <Image src={cover2} alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
@@ -93,10 +91,7 @@ useEffect(() => {
             </Link>
           </div>
          
-        </div>
-        
-
-        
+        </div> 
       </div>
   
      </section>
@@ -111,7 +106,7 @@ useEffect(() => {
       
 
     </div>
-    </div>
+ 
    
   )
 }
