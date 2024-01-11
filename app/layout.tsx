@@ -14,9 +14,6 @@ import { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
 
 
-
-
-
 export default function RootLayout({
   children,
 }: {
@@ -164,11 +161,6 @@ export default function RootLayout({
            
            </div>
           
-       
-       
-
-             
-      
         </nav>
         <CustomCursor/>
         <div className=' h-full  '>
