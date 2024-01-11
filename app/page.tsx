@@ -24,16 +24,16 @@ useEffect(() => {
   return (
      <div className='text-[#363636] py-10 px-8  overflow-auto h-full  '>
        {/* Hero section */}
-      <section className='lg:px-24 '>
-        <div className='flex flex-col justify-between'>
+      <section className='lg:px-24  '>
+        <div className='flex flex-col md:justify-between '>
           <div className=''>
-          <h1 className='text-[40px]  sm:text-8xl font-gallient  '>
+          <h1 className='text-[40px]  sm:text-8xl font-gallient text-center md:text-start  '>
             Frontend Engineer</h1>
-          <div className=' mt-4 flex flex-col md:flex-row justify-around'>
+          <div className=' mt-4 flex flex-col sm:flex-row md:justify-around justify-center items-center   gap-8 lg:gap-4'>
           <Image src={photo} alt='Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate'  className='w-[200px] ' style={{objectFit: "cover"}} />
-            <div className='mt-4 flex flex-col justify-center sm:items-center'>
-            <h3 className='text-[40px]  sm:text-8xl font-gallient '> Technical Writer</h3>
-            <h3 className='text-[40px]  sm:text-8xl font-gallient lg:mt-8 '> FOSS Advocate</h3>
+            <div className='mt-4 flex flex-col justify-center items-center '>
+            <h3 className='text-[40px] sm:text-7xl lg:text-8xl  font-gallient '> Technical Writer</h3>
+            <h3 className='text-[40px]  sm:text-7xl lg:text-8xl font-gallient sm:mt-8 '> FOSS Advocate</h3>
             </div>
           </div>
 
@@ -41,7 +41,7 @@ useEffect(() => {
          
           <div className='flex justify-between mt-8 sm:mt-16 gap-8'>
             <div className='sm:w-[50%]'>
-            <p className='text-xl sm:text-3xl sm:max-w-[400px] ' id='link'>  3+ years of professional experience nudging early-stage brands and teams into greatness.</p>
+            <p className='text-xl sm:text-3xl sm:max-w-[400px] mx-auto ' id='link'>  3+ years of professional experience nudging early-stage brands and teams into greatness.</p>
             </div>
           </div>
         </div>
