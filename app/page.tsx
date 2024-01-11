@@ -24,7 +24,7 @@ useEffect(() => {
   return (
      <div className='text-[#363636] py-10 px-8  overflow-auto h-full  '>
        {/* Hero section */}
-      <section className=''>
+      <section className='lg:px-24 '>
         <div className='flex flex-col justify-between'>
           <div className=''>
           <h1 className='text-[40px]  sm:text-8xl font-gallient  '>
@@ -48,7 +48,7 @@ useEffect(() => {
       </section>
   
    {/* Projectsection */}
-     <section className='mt-16 '>
+     <section className='mt-16 sm:px-24 '>
       <div className="heading flex flex-row sm:flex-col gap-4 justify-center ">
       <h2 className='text-center text-[40px] sm:text-8xl font-gallient'>Selected</h2>
       <h2 className='text-center    font-gallient text-[40px] sm:text-8xl sm:ml-28 '>Projects</h2>

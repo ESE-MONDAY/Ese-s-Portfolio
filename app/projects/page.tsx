@@ -7,6 +7,7 @@ import Image from 'next/image';
 import cover from '../../public/cover.jpg';
 import cover2 from '../../public/cover2.png';
 import MockupImage from '../../public/MockupImage.png';
+import Travel from '../../public/Travel.png'
 
 
 
@@ -63,6 +64,16 @@ const Works = () => {
          
          
         </div>
+         {/* Project 4 */}
+         <div className='w-full flex justify-end mt-8'>
+        <div className='sm:w-[50%]'>
+          <Image src={Travel} alt='Book your next vacation with us! These websites can help you book the full package–flights, hotels, cars. It’s like having a travel agent. You can find solid deals with these sites, lthough you' style={{objectFit:"cover"}} />
+          <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Travel Forest </h4>
+         
+            <Link href="https://travel-forest-io.vercel.app/#" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
+          
+        </div>
+        </div>
       </div>
       {/* Articles */}
 
@@ -72,7 +83,7 @@ const Works = () => {
         <h2 className='text-3xl sm:text-6xl sm:mt-4  font-gallient  font-semibold text-start lg:ml-36 '>Articles</h2>
         <div className='mt-8 hidden sm:flex  '>
         
-          <q className='sm:ml-24 '>Writing is the art of discovering <br />what you believe. - Gustave Flaubert</q>
+          <q className='pr-4 '>Writing is the art of discovering <br />what you believe. - Gustave Flaubert</q>
         </div>
         </div>
          <div className='lg:basis-1/2 w-full'>
