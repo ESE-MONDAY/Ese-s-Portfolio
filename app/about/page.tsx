@@ -17,7 +17,7 @@ const AboutMe = () => {
         {/* Projects*/}
         <div className='flex flex-col lg:flex-row justify-between '>
             <div className='lg:w-[50%] w-full flex justify-between items-center   h-[400px]'>
-                <Image src={photo} alt='Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate'  style={{objectFit: "contain", height: "100%"}} />
+                <Image src={photo} loading='lazy' alt='Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate'  style={{objectFit: "contain", height: "100%"}} />
             </div>
             <div className='lg:w-[50%] w-full flex justify-between items-center flex-col'>
         <div className='max-w-[400px] overflow-hidden' >
