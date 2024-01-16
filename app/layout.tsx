@@ -76,11 +76,14 @@ export default function RootLayout({
 
             <meta property="og:title" content="Frontend Engineer and Technical Writer" />
               <meta property="og:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
+              <meta property="og:image" content="/public/homepage.png" />
+              <meta property="og:url" content="https://www.esemonday.study/" />
+                  <meta property="og:type" content="website" />
 
               <meta name="twitter:card" content="summary_large_image" />
                   <meta name="twitter:title" content="Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate." />
                   <meta name="twitter:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
-                  <meta name="twitter:image" content="/public/homepage.png" />
+                  <meta name="twitter:image" content="/homepage.png" />
                 
             <link rel="icon" href="/favicon.ico" />
           </head>
