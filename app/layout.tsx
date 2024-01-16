@@ -67,13 +67,9 @@ export default function RootLayout({
         <head>
             <meta charSet="utf-8" />
             <title>Ese Monday - Frontend Engineer, Technical Writer, and FOSS</title>
-            
             <meta name="author" content="Ese Monday" />
-            <link rel="canonical" href="https://www.esemonday.study/" />
-
             <meta name="description" content=" Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
-            <meta name="keywords" content="Ese Monday, Ese, Monday, Ese Monday Portfolio, Ese Monday Software Developer, Ese Monday Frontend Engineer, Ese Monday Technical Writer, Ese Monday FOSS Advocate, Ese Monday Blockchain Engineer, Ese Monday Lagos Nigeria, Ese Monday Software Developer Lagos Nigeria, Ese Monday Frontend Engineer Lagos Nigeria, Ese Monday Technical Writer Lagos Nigeria, Ese Monday FOSS Advocate Lagos Nigeria, Ese Monday Blockchain Engineer Lagos Nigeria" />
-
+            <meta name="keywords" content="Frontend Development, Web Development, HTML5, CSS3, JavaScript, React.js, Vue.js, Technical Writing, Documentation, Open Source Contributions, FOSS Advocate ,Web Development, HTML5, CSS3,JavaScript, Code Documentation,  User Interface (UI) Design , Responsive Web Design, Git and GitHub, Software Development, Coding Standards, Accessibility (a11y), Web Standards, Performance Optimization, Cross-Browser Compatibility, Progressive Web Apps (PWAs), API Integration, Frontend Frameworks, Blogging on Tech Topics,Code Reviews, Software Engineering, Collaboration in Tech, Coding Best Practices, Technical Communication"/>
               <meta property="og:title" content="Frontend Engineer and Technical Writer" />
               <meta property="og:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
               <meta property="og:image" content="/public/homepage.png" />
@@ -82,16 +78,12 @@ export default function RootLayout({
               <meta property="linkedin:owner" content="https://www.linkedin.com/in/ese-monday/" />
               <meta name="twitter:site" content="https://twitter.com/EseMonday1" />
               <meta property="fb:pages" content="https://web.facebook.com/ese.monday.5" />
-
-
-
-
               <meta name="twitter:card" content="summary_large_image" />
-                  <meta name="twitter:title" content="Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate." />
-                  <meta name="twitter:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
-                  <meta name="twitter:image" content="/homepage.png" />
-                
-            <link rel="icon" href="/favicon.ico" />
+              <meta name="twitter:title" content="Ese Monday - Frontend Engineer, Technical Writer, and FOSS Advocate." />
+              <meta name="twitter:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
+              <meta name="twitter:image" content="/homepage.png" />
+              <link rel="icon" href="/favicon.ico" />
+              <link rel="canonical" href="https://www.esemonday.study/" />
           </head>
       <body>
       <div className=' overflow-auto' ref={container}>
