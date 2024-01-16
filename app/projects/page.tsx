@@ -35,7 +35,7 @@ const Works = () => {
           {/* Project 1 */}
         <div className='sm:w-[50%]'>
           <div className='bg-white p-8'>
-          <Image src={MockupImage} alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
+          <Image src={MockupImage} loading='lazy'  alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
           </div>
           
           <h2 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h2>
@@ -45,7 +45,7 @@ const Works = () => {
         {/* Project 2 */}
         <div className='w-full flex justify-end mt-8'>
         <div className='sm:w-[50%]'>
-          <Image src={cover} alt='Markin Architecture Studio based in Brooklyn New York' style={{objectFit:"cover"}} />
+          <Image src={cover} loading='lazy'  alt='Markin Architecture Studio based in Brooklyn New York' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Markin Architecture Studio </h4>
          
             <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
@@ -55,7 +55,7 @@ const Works = () => {
         {/* Project 3 */}
         <div className='flex mt-4'>
           <div className='sm:w-[50%]'>
-              <Image src={cover2} alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
+              <Image src={cover2} loading='lazy'  alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
               <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Skincare Website </h4>
               
               <Link href="https://verdant-bubblegum-5acbc7.netlify.app/" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
@@ -67,7 +67,7 @@ const Works = () => {
          {/* Project 4 */}
          <div className='w-full flex justify-end mt-8'>
         <div className='sm:w-[50%]'>
-          <Image src={Travel} alt='Book your next vacation with us! These websites can help you book the full package–flights, hotels, cars. It’s like having a travel agent. You can find solid deals with these sites, lthough you' style={{objectFit:"cover"}} />
+          <Image src={Travel} loading='lazy'  alt='Book your next vacation with us! These websites can help you book the full package–flights, hotels, cars. It’s like having a travel agent. You can find solid deals with these sites, lthough you' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Travel Forest </h4>
          
             <Link href="https://travel-forest-io.vercel.app/#" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>

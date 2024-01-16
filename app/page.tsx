@@ -57,7 +57,7 @@ useEffect(() => {
          {/* Project 1 section */}
         <div className='sm:w-[50%]'>
           <div className=''>
-          <Image src={MockupImage} alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
+          <Image src={MockupImage} loading='lazy'  alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
           </div>
           
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h4>
@@ -68,7 +68,7 @@ useEffect(() => {
         {/* Project 2 section */}
         <div className='w-full flex justify-end mt-8'>
         <div className='sm:w-[50%]'>
-          <Image src={cover} alt='Markin Architecture Studio  based in Brooklyn New York city' style={{objectFit:"cover"}} />
+          <Image src={cover} loading='lazy'  alt='Markin Architecture Studio  based in Brooklyn New York city' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Markin Architecture Studio </h4>
           <p className='text-base mt-2 sm:mt-4'>
             <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" target='_blank'>Visit Webpage</Link>
@@ -78,7 +78,7 @@ useEffect(() => {
         {/* Project 3 section */}
         <div className='sm:flex mt-4'>
           <div className='sm:w-[50%]'>
-              <Image src={cover2} alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
+              <Image src={cover2} loading='lazy'  alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
               <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Skincare Website </h4>
               <p className='text-base mt-2 sm:mt-4'>
               <Link href="https://verdant-bubblegum-5acbc7.netlify.app/" target='_blank'>Visit Webpage</Link>
