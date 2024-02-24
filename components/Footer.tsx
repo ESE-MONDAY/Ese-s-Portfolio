@@ -1,4 +1,5 @@
 import React from 'react'
+import Carbonbadge from "react-carbonbadge"
 
 
 const Footer = () => {
@@ -10,6 +11,7 @@ const Footer = () => {
             <p>She/Her</p> ·
             <p>Nigeria</p>
         </div>
+        {/* <Carbonbadge darkMode={true} /> */}
    
             </div>
   )

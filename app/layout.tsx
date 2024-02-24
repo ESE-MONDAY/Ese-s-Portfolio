@@ -116,7 +116,7 @@ export default function RootLayout({
                 <Link className='navigation' href="/about" >
                 <p className='text-lg font-roboto font-medium flex '>About</p>
                 </Link>
-                <Link className='navigation' href="https://ese-monday.hashnode.dev/" target='_blank' >
+                <Link className='navigation' href="https://blog.esemonday.study/" target='_blank' >
                 <p className='text-lg font-roboto font-medium flex '>Blog</p>
                 </Link> 
                   

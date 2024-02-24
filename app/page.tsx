@@ -61,6 +61,7 @@ useEffect(() => {
           </div>
           
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h4>
+          <p className='mt-4 text-sm'>Marketsq is a revolutionary two-in-one platform that combines the features of an ecommerce marketplace and a freelancing platform. It allows buyers to access sellers storefronts to buy and sell goods and services, creating a seamless experience for both transactions and freelance collaborations.</p>
           <p className='text-base mt-2 sm:mt-4'>
             <Link href="https://www.mymarketsq.com/" target='_blank'>Visit Webpage</Link>
           </p>
@@ -70,6 +71,7 @@ useEffect(() => {
         <div className='sm:w-[50%]'>
           <Image src={cover} loading='lazy'  alt='Markin Architecture Studio  based in Brooklyn New York city' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Markin Architecture Studio </h4>
+          <p className='mt-4 text-sm'>Markin is an architecture studio based in Broolyn, New York that specializes in crafting captivating spaces that inspire. With meticulous attention to detail and a passion for pushing design boundaries. </p>
           <p className='text-base mt-2 sm:mt-4'>
             <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" target='_blank'>Visit Webpage</Link>
           </p>
