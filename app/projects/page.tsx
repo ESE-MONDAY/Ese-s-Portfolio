@@ -7,7 +7,10 @@ import Image from 'next/image';
 import cover from '../../public/cover.jpg';
 import cover2 from '../../public/cover2.png';
 import MockupImage from '../../public/MockupImage.png';
-import Travel from '../../public/Travel.png'
+import Travel from '../../public/Travel.png';
+import Megamind from '../../public/megamind.png'
+import Tempo from '../../public/Tempo.png'
+import { FaLink, FaGithub } from "react-icons/fa";
 
 
 
@@ -40,7 +43,7 @@ const Works = () => {
           
           <h2 className='text-xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h2>
           <p className='mt-4 text-base'>Marketsq is a revolutionary two-in-one platform that combines the features of an ecommerce marketplace and a freelancing platform. It allows buyers to access sellers storefronts to buy and sell goods and services, creating a seamless experience for both transactions and freelance collaborations.</p>
-            <Link href="https://www.mymarketsq.com/"  className="text-base mt-2 sm:mt-4" target='_blank'>Visit Webpage</Link>
+            <Link href="https://www.mymarketsq.com/"  className="text-base " target='_blank'><FaLink size={16} className='mt-4'/></Link>
          
         </div>
         {/* Project 2 */}
@@ -49,7 +52,7 @@ const Works = () => {
           <Image src={cover} loading='lazy'  alt='Markin Architecture Studio based in Brooklyn New York' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Markin Architecture Studio </h4>
             <p className='mt-4 text-base'>Markin is an architecture studio based in Broolyn, New York that specializes in crafting captivating spaces that inspire. With meticulous attention to detail and a passion for pushing design boundaries. </p>
-            <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
+            <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" className='text-base ' target='_blank'><FaLink size={16} className='mt-4'/></Link>
           
         </div>
         </div>
@@ -59,7 +62,7 @@ const Works = () => {
               <Image src={cover2} loading='lazy'  alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
               <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Skincare Website </h4>
               
-              <Link href="https://verdant-bubblegum-5acbc7.netlify.app/" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
+              <Link href="https://verdant-bubblegum-5acbc7.netlify.app/" className='text-base ' target='_blank'><FaLink size={16} className='mt-4'/></Link>
            
           </div>
          
@@ -71,19 +74,27 @@ const Works = () => {
           <Image src={Travel} loading='lazy'  alt='Book your next vacation with us! These websites can help you book the full package–flights, hotels, cars. It’s like having a travel agent. You can find solid deals with these sites, lthough you' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Travel Forest </h4>
           <p className='mt-4 text-base'>Travel Forest is a company that offer comprehensive booking services for flights, hotels, and car rentals, akin to having a personal travel agent</p>
-         
-            <Link href="https://travel-forest-io.vercel.app/#" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
+         <div className='flex gap-4'>
+         <Link href="https://travel-forest-io.vercel.app/#" className='text-base' target='_blank'><FaLink size={16} className='mt-4'/></Link>
+         <Link href="https://github.com/ESE-MONDAY/travel-forest.io" className='text-base' target='_blank'><FaGithub size={16} className='mt-4'/></Link>
+         </div>
+           
           
         </div>
         </div>
         {/* Project 5 */}
         <div className='flex mt-4'>
           <div className='sm:w-[50%]'>
-              <Image src={cover2} loading='lazy'  alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
+              <Image src={Megamind} loading='lazy'  alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
               <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Megamind</h4>
               <p className='text-base mt-4'>Megamind is a sleek analytics dashboard powered by Next.js, Next.js-Themes, and Recharts. Seamlessly switch themes and visualize data with ease. Compact and efficient, Megamind delivers actionable insights for informed decision-making.</p>
+              <div className='flex gap-4'>
+              <Link href="https://analytics-dashboard-one-swart.vercel.app/" className='text-base ' target='_blank'><FaLink size={16} className='mt-4'/></Link>
+              <Link href="https://github.com/ESE-MONDAY/analytics-dashboard" className='text-base ' target='_blank'><FaGithub size={16} className='mt-4'/></Link>
+
+              </div>
               
-              <Link href="https://analytics-dashboard-one-swart.vercel.app/" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
+             
            
           </div>
          
@@ -92,11 +103,15 @@ const Works = () => {
         {/* Project 6 */}
         <div className='w-full flex justify-end mt-8'>
         <div className='sm:w-[50%]'>
-          <Image src={Travel} loading='lazy'  alt='Book your next vacation with us! These websites can help you book the full package–flights, hotels, cars. It’s like having a travel agent. You can find solid deals with these sites, lthough you' style={{objectFit:"cover"}} />
+          <Image src={Tempo} loading='lazy'  alt='Book your next vacation with us! These websites can help you book the full package–flights, hotels, cars. It’s like having a travel agent. You can find solid deals with these sites, lthough you' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Tempo Weather </h4>
           <p className='mt-4 text-base'>Tempo is a modern weather app built with React and Redux toolkit, integrating the OpenWeatherMap API and Geonames API. It provides users with real-time weather updates and detailed forecasts, all within an intuitive and user-friendly interface. With Tempo, users can easily access accurate weather information tailored to their location, ensuring they stay informed and prepared for any weather conditions.</p>
+          <div className='flex gap-4'>
+          <Link href="https://vercel.com/ese-monday/tempo" className='text-base' target='_blank'><FaLink size={16} className='mt-4'/></Link>
+            <Link href="https://github.com/ESE-MONDAY/Tempo" className='text-base' target='_blank'><FaGithub size={16} className='mt-4'/></Link>
+          </div>
          
-            <Link href="https://vercel.com/ese-monday/tempo" className='text-base mt-2 sm:mt-4' target='_blank'>Visit Webpage</Link>
+            
           
         </div>
         </div>

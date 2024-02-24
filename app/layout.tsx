@@ -123,8 +123,10 @@ export default function RootLayout({
                 <Link className='navigation' href="/contact" >
                 <p className='text-lg font-roboto font-medium flex '>Contact</p>
                 </Link> 
-
             </div>
+            <Link className='rounded-lg navigation text-[#fafaf8] bg-[#363636] px-4 py-2' href="https://read.cv/esemonday" >
+                <p className='text-lg font-roboto font-medium flex '>Read.cv</p>
+                </Link> 
            </div>
            <div className='flex sm:hidden flex-col'>
             <div className='flex justify-between w-full py-2 px-4'>
@@ -153,7 +155,7 @@ export default function RootLayout({
                 <p className='text-xl text-center  font-roboto font-medium flex '>Blog</p>
                 </Link> 
                   
-                <Link className='navigation' href="/contact" onClick={handleMenuClose} >
+                <Link className='navigation -[#363636]' href="/contact" onClick={handleMenuClose} >
                 <p className='text-xl text-center  font-roboto font-medium flex '>Contact</p>
                 </Link> 
 

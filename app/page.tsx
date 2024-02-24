@@ -6,6 +6,8 @@ import cover from '../public/cover.jpg'
 import cover2 from '../public/cover2.png'
 import MockupImage from '../public/MockupImage.png'
 import photo from '../public/photo.jpg'
+import Tempo from '../public/Tempo.png'
+import { FaLink, FaGithub} from "react-icons/fa";
 
 
 
@@ -61,9 +63,9 @@ useEffect(() => {
           </div>
           
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h4>
-          <p className='mt-4 text-sm'>Marketsq is a revolutionary two-in-one platform that combines the features of an ecommerce marketplace and a freelancing platform. It allows buyers to access sellers storefronts to buy and sell goods and services, creating a seamless experience for both transactions and freelance collaborations.</p>
+          <p className='mt-4 text-base'>Marketsq is a revolutionary two-in-one platform that combines the features of an ecommerce marketplace and a freelancing platform. It allows buyers to access sellers storefronts to buy and sell goods and services, creating a seamless experience for both transactions and freelance collaborations.</p>
           <p className='text-base mt-2 sm:mt-4'>
-            <Link href="https://www.mymarketsq.com/" target='_blank'>Visit Webpage</Link>
+            <Link href="https://www.mymarketsq.com/" target='_blank'><FaLink size={16} className='mt-4'/></Link>
           </p>
         </div>
         {/* Project 2 section */}
@@ -71,20 +73,23 @@ useEffect(() => {
         <div className='sm:w-[50%]'>
           <Image src={cover} loading='lazy'  alt='Markin Architecture Studio  based in Brooklyn New York city' style={{objectFit:"cover"}} />
           <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Markin Architecture Studio </h4>
-          <p className='mt-4 text-sm'>Markin is an architecture studio based in Broolyn, New York that specializes in crafting captivating spaces that inspire. With meticulous attention to detail and a passion for pushing design boundaries. </p>
+          <p className='mt-4 text-base'>Markin is an architecture studio based in Broolyn, New York that specializes in crafting captivating spaces that inspire. With meticulous attention to detail and a passion for pushing design boundaries. </p>
           <p className='text-base mt-2 sm:mt-4'>
-            <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" target='_blank'>Visit Webpage</Link>
+            <Link href="https://spontaneous-vacherin-8afdf0.netlify.app/" target='_blank'><FaLink size={16} className='mt-4'/></Link>
           </p>
         </div>
         </div>
         {/* Project 3 section */}
         <div className='sm:flex mt-4'>
           <div className='sm:w-[50%]'>
-              <Image src={cover2} loading='lazy'  alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
-              <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Skincare Website </h4>
-              <p className='text-base mt-2 sm:mt-4'>
-              <Link href="https://verdant-bubblegum-5acbc7.netlify.app/" target='_blank'>Visit Webpage</Link>
-              </p>
+              <Image src={Tempo} loading='lazy'  alt='Skincare Mart - One Stop store for korean beauty products' style={{objectFit:"cover"}}  />
+              <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>Tempo Weather </h4>
+                <p className='mt-4 text-base'>Tempo is a modern weather app built with React and Redux toolkit, integrating the OpenWeatherMap API and Geonames API. It provides users with real-time weather updates and detailed forecasts, all within an intuitive and user-friendly interface. With Tempo, users can easily access accurate weather information tailored to their location, ensuring they stay informed and prepared for any weather conditions.</p>
+             
+              <div className='flex gap-4'>
+              <Link href="https://vercel.com/ese-monday/tempo" className='text-base' target='_blank'><FaLink size={16} className='mt-4'/></Link>
+                <Link href="https://github.com/ESE-MONDAY/Tempo" className='text-base' target='_blank'><FaGithub size={16} className='mt-4'/></Link>
+              </div>
           </div>
           <div className=' sm:w-[50%] flex justify-center items-center mt-4 sm:mt-0'>
             <Link href="/projects" className='font-gallient  sm:text-5xl text-center sm:border-[1px] sm:border-[#363636] hover:bg-[#363636] hover:text-[#fafaf8] transition duration-300 ease-in-out p-4 sm:p-12 hover:rounded-full flex  items-center justify-center sm:flex-col gap-2 '>
