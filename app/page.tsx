@@ -62,7 +62,7 @@ useEffect(() => {
           <Image src={MockupImage} loading='lazy'  alt='MyMarketsq - Ecommerce marketplace for goods and services in Africa and Uk' style={{objectFit:"cover"}}  />
           </div>
           
-          <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Eccomerce </h4>
+          <h4 className='text-2xl sm:text-4xl font-bold mt-4 sm:mt-8'>MyMarketSq - Ecommerce </h4>
           <p className='mt-4 text-base'>Marketsq is a revolutionary two-in-one platform that combines the features of an ecommerce marketplace and a freelancing platform. It allows buyers to access sellers storefronts to buy and sell goods and services, creating a seamless experience for both transactions and freelance collaborations.</p>
           <p className='text-base mt-2 sm:mt-4'>
             <Link href="https://www.mymarketsq.com/" target='_blank'><FaLink size={16} className='mt-4'/></Link>
@@ -87,7 +87,7 @@ useEffect(() => {
                 <p className='mt-4 text-base'>Tempo is a modern weather app built with React and Redux toolkit, integrating the OpenWeatherMap API and Geonames API. It provides users with real-time weather updates and detailed forecasts, all within an intuitive and user-friendly interface. With Tempo, users can easily access accurate weather information tailored to their location, ensuring they stay informed and prepared for any weather conditions.</p>
              
               <div className='flex gap-4'>
-              <Link href="https://vercel.com/ese-monday/tempo" className='text-base' target='_blank'><FaLink size={16} className='mt-4'/></Link>
+              <Link href="https://tempo-gules.vercel.app/" className='text-base' target='_blank'><FaLink size={16} className='mt-4'/></Link>
                 <Link href="https://github.com/ESE-MONDAY/Tempo" className='text-base' target='_blank'><FaGithub size={16} className='mt-4'/></Link>
               </div>
           </div>
