@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 
 
-Sitemap: https://www.esemonday.study/sitemap.xml
+Sitemap: https://www.esemonday.xyz/sitemap.xml

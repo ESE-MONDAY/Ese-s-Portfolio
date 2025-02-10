@@ -73,7 +73,7 @@ export default function RootLayout({
               <meta property="og:title" content="Frontend Engineer and Technical Writer" />
               <meta property="og:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
               <meta property="og:image" content="/public/homepage.png" />
-              <meta property="og:url" content="https://www.esemonday.study/" />
+              <meta property="og:url" content="https://www.esemonday.xyz/" />
               <meta property="og:type" content="website" />
               <meta property="linkedin:owner" content="https://www.linkedin.com/in/ese-monday/" />
               <meta name="twitter:site" content="https://twitter.com/EseMonday1" />
