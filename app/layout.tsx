@@ -83,7 +83,7 @@ export default function RootLayout({
               <meta name="twitter:description" content="Experienced Frontend Engineer, Technical Writer, and FOSS Advocate with 3+ years of professional experience. Check out selected projects and more." />
               <meta name="twitter:image" content="/homepage.png" />
               <link rel="icon" href="/favicon.ico" />
-              <link rel="canonical" href="https://www.esemonday.study/" />
+              <link rel="canonical" href="https://www.esemonday.xyz/" />
           </head>
       <body>
       <div className=' overflow-auto' ref={container}>
